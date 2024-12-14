@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-c%%xo&6ccxbdx0e_is$)4ph3wn)tf5wuj1gik(&83ty0+-tdit"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*",'13.201.167.248']
 
@@ -91,8 +91,8 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": 'fundoo',#os.environ.get('DATABASE_NAME'),
         "USER": "postgres",#os.environ.get('DATABASE_USER'),
-        "PASSWORD": "Antima-123",#os.environ.get('DATABASE_PASSWORD'),
-        "HOST" : "13.233.145.42",
+        "PASSWORD": "Shreyas28",#os.environ.get('DATABASE_PASSWORD'),
+        "HOST" : "database-fundoo-notes.cxaowsagyyvi.ap-south-1.rds.amazonaws.com",
         "PORT" : "5432",
     }
 }

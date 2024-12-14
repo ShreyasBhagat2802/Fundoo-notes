@@ -24,6 +24,8 @@ from drf_yasg import openapi
 
 from django.conf import settings
 from django.conf.urls.static import static
+from django.urls import path
+from . import views
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -49,6 +51,7 @@ urlpatterns = [
     
     # path("register/", register_user, name="register"),
     # path("login/", login_user, name="login"),
+    path('', views.index, name='home'),
 ]
 
 if settings.DEBUG:
